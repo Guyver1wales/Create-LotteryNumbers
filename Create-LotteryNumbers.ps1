@@ -35,11 +35,11 @@ while (
 	$usedTotalNumbers.count -lt 54
 )
 
+
+### CREATE THE FINAL 10TH LINE USING THE REAMINING 5 NUMBERS PLUS AN ADDITIONAL REUSED NUMBER ###
 $allNumbers = 1..59
 $lastLine = $allNumbers | Where-Object { ($usedTotalNumbers.contains("$_") -eq $false) }
 
-
-### CREATE THE FINAL 10TH LINE USING THE REAMINING 5 NUMBERS PLUS AN ADDITIONAL REUSED NUMBER ###
 do {
 	$finalRandomNumber = $null
 	$finalRandomNumber = Get-Random -Minimum 1 -Maximum 59
