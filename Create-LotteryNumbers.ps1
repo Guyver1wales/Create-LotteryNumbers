@@ -42,7 +42,7 @@ $lastLine = $allNumbers | Where-Object { ($usedTotalNumbers.contains("$_") -eq $
 
 do {
 	$finalRandomNumber = $null
-	$finalRandomNumber = Get-Random -Minimum 1 -Maximum 59
+	$finalRandomNumber = Get-Random -Minimum 1 -Maximum 60
 	if (($lastLine.contains("$finalRandomNumber") -eq $False)) {
 		$lastLine += $finalRandomNumber
 	}
