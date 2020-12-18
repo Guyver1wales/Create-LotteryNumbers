@@ -17,7 +17,7 @@ do {
 	$usedNumbers = @()
 	do {
 		$randomNumber = $null
-		$randomNumber = Get-Random -Minimum 1 -Maximum 59
+		$randomNumber = Get-Random -Minimum 1 -Maximum 60
 		if (($usedNumbers.contains("$randomNumber") -eq $False) -and ($usedTotalNumbers.contains("$randomNumber") -eq $False)) {
 			$usedNumbers += $randomNumber
 			$usedTotalNumbers += $randomNumber
